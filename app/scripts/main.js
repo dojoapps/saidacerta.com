@@ -4,7 +4,7 @@
  */
 'use strict';
 
-var jsonp = require('./lib/jsonp'),
+var jsonp = require('xhr-browserify'),
     http = require('http'),
     scrollReveal = require('scrollReveal'),
     venuesTemplate = require('./templates/venues.hbs');

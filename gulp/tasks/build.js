@@ -10,9 +10,9 @@ gulp.task('html', ['styles','scripts'], function () {
 
     return gulp.src('app/*.html')
         .pipe($.useref.assets({searchPath: '{.tmp,app}'}))
-        .pipe(jsFilter)
+        /*.pipe(jsFilter)
         .pipe($.uglify())
-        .pipe(jsFilter.restore())
+        .pipe(jsFilter.restore())*/
         .pipe(cssFilter)
         .pipe($.csso())
         .pipe(cssFilter.restore())
