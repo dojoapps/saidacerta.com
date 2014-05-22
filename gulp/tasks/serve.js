@@ -22,3 +22,17 @@ gulp.task('connect', function () {
 gulp.task('serve', ['connect', 'scripts', 'styles'], function () {
   require('opn')('http://localhost:' + config.port);
 });
+
+gulp.task('prod', function() {
+  var connect = require('connect');
+  var app = connect()
+    .use('/', connect.static('dist'));
+
+  require('http').createServer(app)
+    .listen(config.port)
+    .on('listening', function () {
+      console.log('Started connect web server on http://localhost:' + config.port);
+    });
+
+  require('opn')('http://localhost:' + config.port);
+});
