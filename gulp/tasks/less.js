@@ -11,6 +11,7 @@ gulp.task('styles', function () {
       style: 'expanded',
       loadPath: [config.bower]
     }))
+    .pipe($.uncss({ html: ['app/index.html']}))
     .pipe($.autoprefixer('last 1 version'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe($.size());
