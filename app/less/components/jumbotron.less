@@ -1,0 +1,24 @@
+.jumbotron {
+  .make-row();
+  margin-bottom: 0;
+  background-color: @blueDark;
+
+  .mascot {
+    .make-md-column(4);
+    .make-md-column-offset(2);
+    .make-md-column-pull(5);
+    width: 100%;
+  }
+
+  .flavor {
+    .make-md-column(5);
+    .make-md-column-push(6);
+
+    color: @blueLight;
+    text-align: center;
+
+    strong {
+        color: @orange;
+    }
+  }
+}

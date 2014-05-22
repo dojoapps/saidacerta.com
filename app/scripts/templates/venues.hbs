@@ -1,0 +1,12 @@
+<div class="states-list">
+  {{#states}}
+    <div class="state">
+      <div class="state-name">{{state}}</div>
+      <div class="venues-list">
+        {{#venues}}
+          <img class="venue-image" src="https://api.saidacerta.com/venues/{{id}}/picture" alt="{{name}}">
+        {{/venues}}
+      </div>
+    </div>
+  {{/states}}
+</div>

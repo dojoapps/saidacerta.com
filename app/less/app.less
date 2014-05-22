@@ -1,0 +1,48 @@
+/* ==========================================================================
+   App Stylesheet
+   app.less
+   ========================================================================== */
+@font-face {
+    font-family: 'Cadena';
+    src: url('fonts/cadenablack-webfont.eot');
+    src: url('fonts/cadenablack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cadenablack-webfont.woff') format('woff'),
+         url('fonts/cadenablack-webfont.ttf') format('truetype'),
+         url('fonts/cadenablack-webfont.svg#cadenaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import "bootstrap.less";
+
+.content-block {
+  padding-bottom: (@padding-large-vertical*3);
+}
+
+.group-title {
+  padding-top: (@padding-large-vertical*3);
+  padding-bottom: (@padding-large-vertical*3);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media(min-width: @screen-md-min) {
+    font-size: 48px;
+  }
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+#contact-success, #contact-error {
+  display: none;
+}
+
+@import "components/jumbotron.less";
+@import "components/como-funciona.less";
+@import "components/onde-e-aceito.less";
+@import "components/baixe-agora.less";
+@import "components/fale-conosco.less";
+@import "components/footer.less";

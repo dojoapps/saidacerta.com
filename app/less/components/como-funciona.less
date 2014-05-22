@@ -1,0 +1,45 @@
+.como-funciona {
+  background-color: @orange;
+  text-align: center;
+
+  h2 {
+    background-color: @blueLight;
+    border-bottom: 4px solid #0097d6;
+    .group-title;
+
+    @media(min-width: @screen-md-min) {
+      padding-bottom: (@padding-large-vertical*6);
+    }
+  }
+
+  .steps {
+    .make-row();
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+    @media(min-width: @screen-md-min) {
+      position: relative;
+      top: -70px;
+    }
+
+    li {
+      .make-sm-column(12);
+      .make-md-column(3);
+      .clearfix;
+
+      text-align: center;
+    }
+
+    .icon {
+      height: 140px;
+      margin-right: 20px;
+      float: left;
+
+      @media(min-width: @screen-md-min) {
+        float: none;
+        margin-right: 0;
+      }
+    }
+  }
+}
