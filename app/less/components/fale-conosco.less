@@ -1,7 +1,17 @@
 .fale-conosco {
   .content-block;
+  .make-sm-column(12);
+  .make-md-column(6);
   background-color: @blueDark;
+  padding-top: (@padding-large-vertical*3);
 
+  @media(min-width: @screen-sm-min) {
+    background-color: @blueDarker;
+  }
+
+  h2 {
+      margin-top: 0;
+  }
 
   .btn {
     background-color: @orange;
