@@ -23,7 +23,7 @@ gulp.task('html', ['styles','scripts'], function () {
 });
 
 gulp.task('extras', function () {
-    return gulp.src(['app/*.*', '!app/*.html'], { dot: true })
+    return gulp.src(['app/*', '!app/*.html'], { dot: true })
         .pipe(gulp.dest('dist'));
 });
 
