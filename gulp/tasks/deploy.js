@@ -9,7 +9,7 @@ gulp.task('deploy', function () {
         .pipe($.s3({
           key: args.awsAccessKey || process.env.AWS_ACCESS_KEY,
           secret: args.awsSecretKey || process.env.AWS_SECRET_KEY,
-          bucket: 'saidacerta.com',
+          bucket: 'www.saidacerta.com',
           region: 'us-east-1'
         }));
 });
