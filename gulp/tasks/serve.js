@@ -19,7 +19,7 @@ gulp.task('connect', function () {
     });
 });
 
-gulp.task('serve', ['connect', 'scripts', 'styles'], function () {
+gulp.task('serve', ['connect', 'scripts', 'styles', 'fonts'], function () {
   require('opn')('http://localhost:' + config.port);
 });
 
