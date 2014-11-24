@@ -19,3 +19,7 @@ gulp
 ```
 gulp watch
 ```
+
+```
+gulp deploy
+```
